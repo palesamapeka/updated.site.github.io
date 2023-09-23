@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Palesa Mapeka</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="media_queries.css">
+</head>
+
+<body>
+    <!-- Desktop Navigation -->
+    <nav id="desktop-nav">
+        <div class="logo">Palesa Mapeka</div>
+        <div>
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#tech-stack">Tech Stack</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+
+      <!-- Mobile & Smaller Screens -->
+      <nav id="hamburger-nav">
+        <div class="logo">Palesa</div>
+        <div class="hamburger-menu">
+          <div class="hamburger-icon" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <div class="menu-links">
+            <li><a href="#about" onclick="toggleMenu()">About</a></li>
+            <li><a href="#tech-stack" onclick="toggleMenu()">Tech Stack</a></li>
+            <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+            <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+          </div>
+        </div>
+      </nav>
+    
+    <section id="profile">
+        <div class="section__pic-container">
+            <img src="assets/palesa (1).jpg" alt="Palesa's profile Picture" class="profile__picture">
+        </div>
+        <div class="section__text">
+            <p class="section__text__p1">Hello! I'm</p>
+            <h1 class="title">Palesa Mapeka</h1>
+            <p class="section__text__p2">Junior Web Developer</p>
+            <div class="btn-container">
+                <button class="btn btn-color-2" onclick="window.open('assets/Learning Web Design _ A Beginner’s Guide to HTML, CSS, JavaScript, and Web Graphics ( PDFDrive )')">Download CV</button>
+                <button class="btn btn-color-1" onclick="location.href='./#contact'">Contact Me</button>
+            </div>
+            <div id="socials-container">
+                <img src="assets/linkedin.png" alt="My LinkedIn Profile" class="icon" onclick="location.href='https://www.linkedin.com/in/palesa-mapeka/'">
+                <img src="assets/IG.png" alt="My Instagram Profile" class="icon" onclick="location.href='https://www.instagram.com/sieg.fried_/'">
+                <img src="assets/github.png" alt="My Github Profile" class="icon" onclick="location.href='https://github.com/palesamapeka'">
+            </div>
+        </div>
+    </section>
+    <script src="script.js"></script>
+</body>
+
+</html>
