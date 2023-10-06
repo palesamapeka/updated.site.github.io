@@ -19,7 +19,6 @@
           <ul class="nav-links">
             <li><a href="#about">About</a></li>
             <li><a href="#tech-stack">Tech Stack</a></li>
-            <li><a href="#projects">Projects</a></li>
             <li><a href="#contact">Contact</a></li>
           </ul>
         </div>
@@ -37,7 +36,6 @@
           <div class="menu-links">
             <li><a href="#about" onclick="toggleMenu()">About</a></li>
             <li><a href="#tech-stack" onclick="toggleMenu()">Tech Stack</a></li>
-            <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
             <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
           </div>
         </div>
@@ -56,11 +54,7 @@
                 <button class="btn btn-color-1" onclick="window.open('assets/Learning Web Design _ A Beginner’s Guide to HTML, CSS, JavaScript, and Web Graphics ( PDFDrive )')">Download CV</button>
                 <button class="btn btn-color-2" onclick="location.href='./#contact'">Contact Me</button>
             </div>
-            <div id="socials-container">
-                <img src="assets/linkedin.png" alt="My LinkedIn Profile" class="icon" onclick="location.href='https://www.linkedin.com/in/palesa-mapeka/'">
-                <img src="assets/IG.png" alt="My Instagram Profile" class="icon" onclick="location.href='https://www.instagram.com/sieg.fried_/'">
-                <img src="assets/github.png" alt="My Github Profile" class="icon" onclick="location.href='https://github.com/palesamapeka'">
-            </div>
+            
         </div>
     </section>
 
@@ -73,7 +67,7 @@
           <img src="./assets/EB893080-3BA5-4559-BBBD-FF522FB255AD.jpeg" class="about-pic"> 
         </div>
         
-        <div class="about-details-container">
+        <div id="tech-stack" class="about-details-container">
           <div class="about-containers">
             <div class="details-container">
               
@@ -115,8 +109,24 @@
           </div>
         </div>
       </div>
-      <img src="./assets/arrow.png" alt="arrow icon" class="icon" onclick="location.href='./#projects'">
+      <img src="./assets/arrow.png" alt="arrow icon" class="icon" onclick="location.href='./#contact'">
     </section>
+
+    <footer>
+      <nav>
+        <div id="contact" class="nav-links-container">
+          <div id="socials-container">
+            <img src="assets/linkedin.png" alt="My LinkedIn Profile" class="icon" onclick="location.href='https://www.linkedin.com/in/palesa-mapeka/'">
+            <img src="assets/IG.png" alt="My Instagram Profile" class="icon" onclick="location.href='https://www.instagram.com/sieg.fried_/'">
+            <img src="assets/github.png" alt="My Github Profile" class="icon" onclick="location.href='https://github.com/palesamapeka'">
+            <a onclick="window.open('mailto:palesamapeka97@gmail.com','_blank')"
+              ><img src="./assets/email.png" class="icon"></a
+            >
+        </div>
+        </div>
+      </nav>
+      <p>Made with &#128151; by Palesa Mapeka, 2023</p>
+    </footer>
 
     <script src="script.js"></script>
 </body>
